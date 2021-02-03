@@ -1,0 +1,325 @@
+1.composer 安装 use Maatwebsite\Excel\Facades\Excel;
+
+$year_monthh_day_hour = date("Y年m月d日H时",strtotime("-1 day",time()));
+        $table = "【媒体实时报表】-{$year_monthh_day_hour}";
+
+        $inn = Excel::create($table,function($excel) use ($table,$data){
+            $excel->sheet($table, function($sheet) use ($data){
+                //设置整体样式
+                $sheet->setStyle(array(
+                    'font' => array(
+                        'name'      =>  'Calibri',
+                        'size'      =>  14,
+                    ),
+                ));
+
+//                $sheet->setColumnFormat(array(
+//                    'D' => '0%',
+//                    'F' => '0%',
+//                    'J' => '0%',
+//                ));
+
+                $sheet->setAllBorders('thin');
+                $sheet->rows($data);
+
+
+
+                $sheet->cells('A1:G1', function($cells) {
+
+                    // manipulate the cell
+                    $cells->setBackground('#2F75B5');
+                    $cells->setFontColor('#ffffff');
+                    $cells->setAlignment('center');
+                    $cells->setValignment('center');
+                    $cells->setBorder(array(
+                        'top'   => array(
+                            'style' => 'solid'
+                        ),
+                    ));
+                    $cells->setFont(array(
+                        'family'     => 'Calibri',
+                        'size'       => '16',
+                        'bold'       =>  true
+                    ));
+
+
+                });
+                $sheet->cells('H1:K1', function($cells) {
+
+                    // manipulate the cell
+                    $cells->setBackground('#FFE699');
+                    $cells->setFontColor('#307497');
+                    $cells->setAlignment('center');
+                    $cells->setValignment('center');
+                    $cells->setBorder(array(
+                        'top'   => array(
+                            'style' => 'solid'
+                        ),
+                    ));
+                    $cells->setFont(array(
+                        'family'     => 'Calibri',
+                        'size'       => '16',
+                        'bold'       =>  true
+                    ));
+
+                });
+
+                $sheet->cells('A19:G19', function($cells) {
+
+                    // manipulate the cell
+                    $cells->setBackground('#2F75B5');
+                    $cells->setFontColor('#ffffff');
+                    $cells->setAlignment('center');
+                    $cells->setValignment('center');
+                    $cells->setBorder(array(
+                        'top'   => array(
+                            'style' => 'solid'
+                        ),
+                    ));
+                    $cells->setFont(array(
+                        'family'     => 'Calibri',
+                        'size'       => '16',
+                        'bold'       =>  true
+                    ));
+
+
+                });
+                $sheet->cells('H19:K19', function($cells) {
+
+                    // manipulate the cell
+                    $cells->setBackground('#FFE699');
+                    $cells->setFontColor('#307497');
+                    $cells->setAlignment('center');
+                    $cells->setValignment('center');
+                    $cells->setBorder(array(
+                        'top'   => array(
+                            'style' => 'solid'
+                        ),
+                    ));
+                    $cells->setFont(array(
+                        'family'     => 'Calibri',
+                        'size'       => '16',
+                        'bold'       =>  true
+                    ));
+
+                });
+
+                //设置合并列
+
+                $sheet->setMergeColumn(array(
+                    'columns' => array('A','H','I','J','K'),
+                    'rows' => array(
+                        array(2,6),
+                        array(7,11),
+                        array(12,16),
+                        array(20,28),
+                        array(29,37),
+                        array(38,46),
+                    )
+                ),'center');
+
+                $sheet->setWidth(array(
+                    'A'     =>  10,
+                    'B'     =>  10,
+                    'C'     =>  15,
+                    'D'     =>  10,
+                    'E'     =>  15,
+                    'F'     =>  10,
+                    'G'     =>  15,
+                    'H'     =>  15,
+                    'I'     =>  20,
+                    'J'     =>  20,
+                    'K'     =>  20,
+                ));
+
+
+
+
+
+                $shet = ['H','I'];
+                $shet_num = [2,7,12,17,20,29,38,47];
+
+                foreach ($shet as $kk=>$vv){
+                    foreach ($shet_num as $n){
+                        //千分位
+//                        $val = $sheet->getCell($vv.$n)->getValue();
+//                        $sheet->getCell($vv.$n)->setValue(number_format($val,3));
+
+                        $sheet->cell($vv.$n,function ($cells){
+                            self::cell($cells,5);
+                        });
+                    }
+                }
+
+                $shet1 = ['A','B','C','E','G'];
+
+                foreach ($shet1 as $kk=>$vv){
+                    for ($n=2;$n<48;$n++){
+                        if($n==18||$n==19) continue;
+
+//                        if($vv=='C'||$vv=='E'||$vv=='G'){
+//                            //千分位
+//
+//                            $val = $sheet->getCell($vv.$n)->getValue();
+//                            $sheet->getCell($vv.$n)->setValue(number_format($val,3));
+//                        }
+                        $sheet->cell($vv.$n,function ($cells) use ($n){
+                            if($n>=2&&$n<=6||$n>=20&&$n<=28){
+                                self::cell($cells);
+                            }elseif ($n>=7&&$n<=11||$n>=29&&$n<=37){
+                                self::cell($cells,2);
+                            }elseif ($n>=12&&$n<=16||$n>=38&&$n<=46){
+                                self::cell($cells,3);
+                            }elseif ($n==17||$n==47){
+                                self::cell($cells,4);
+                            }
+
+                        });
+                    }
+                }
+
+                $shet2 = ['D','F','J','K'];
+
+                foreach ($shet2 as $kk=>$vv){
+                    for ($n=2;$n<48;$n++){
+                        if($n==18||$n==19) continue;
+                        $sheet->cell($vv.$n,function ($cells) use ($n,$sheet,$vv){
+                            $val = $sheet->getCell($vv.$n)->getValue();
+                            $num = strpos($val,'-');
+                            if($n>=2&&$n<=6||$n>=20&&$n<=28){
+                                if($vv=='J'||$vv=='K'){
+                                    self::cell($cells,5,2,$num);
+                                }else{
+                                    self::cell($cells,1,2,$num);
+                                }
+                            }elseif ($n>=7&&$n<=11||$n>=29&&$n<=37){
+                                if($vv=='J'||$vv=='K'){
+                                    self::cell($cells,5,2,$num);
+                                }else{
+                                    self::cell($cells,2,2,$num);
+                                }
+                            }elseif ($n>=12&&$n<=16||$n>=38&&$n<=46){
+                                if($vv=='J'||$vv=='K'){
+                                    self::cell($cells,5,2,$num);
+                                }else{
+                                    self::cell($cells,3,2,$num);
+                                }
+                            }elseif ($n==17||$n==47){
+                                if($vv=='J'||$vv=='K'){
+                                    self::cell($cells,5,2,$num);
+                                }else{
+                                    self::cell($cells,4,2,$num);
+                                }
+                            }
+
+                        });
+                    }
+                }
+
+                $shet3 = ["C","E","G","H","I","K"];
+
+                $format_num = [];
+                foreach ($shet3 as $kk=>$vv) {
+                    for ($n = 2; $n < 48; $n++) {
+                        if($n==18||$n==19) continue;
+                        $format_num[$vv.$n] = '#,##0.00';
+
+                    }
+                }
+
+                $sheet->setColumnFormat($format_num);
+
+
+
+
+
+            });
+        })->store('xlsx',storage_path('exports'.DIRECTORY_SEPARATOR.date("Ymd",time()).DIRECTORY_SEPARATOR.date("H",time()).DIRECTORY_SEPARATOR),true);
+        
+        public static function cell($cells,$type=1,$category=1,$flag=false){
+            // manipulate the cell
+            if($type==1){
+                $cells->setBackground('#C6E0B4');
+            }elseif ($type==2){
+                $cells->setBackground('#FFD966');
+            }elseif ($type==3){
+                $cells->setBackground('#E2EFDA');
+            }elseif ($type==4){
+                $cells->setBackground('#FFE699');
+            }elseif ($type==5){
+                $cells->setBackground('#DDEBF7');
+            }
+            if($category==1){
+                $cells->setFontColor('#000000');
+            }else{
+                if($flag===false){
+                    $cells->setFontColor('#FF0000');
+                }else{
+                    $cells->setFontColor('#70AD47');
+                }
+            }
+
+
+
+
+            $cells->setAlignment('center');
+            $cells->setValignment('center');
+            $cells->setBorder(array(
+                'top'   => array(
+                    'style' => 'solid'
+                ),
+            ));
+            $cells->setFont(array(
+                'family'     => 'Calibri',
+                'size'       => '14',
+                'bold'       =>  true
+            ));
+    }
+    
+    2.参考链接：https://github.com/Maatwebsite/laravel-excel-docs/blob/develop/2.1/export/format.md
+    3.格式化类
+    class PHPExcel_Style_NumberFormat extends PHPExcel_Style_Supervisor implements PHPExcel_IComparable
+{
+    /* Pre-defined formats */
+    const FORMAT_GENERAL                 = 'General';
+
+    const FORMAT_TEXT                    = '@';
+
+    const FORMAT_NUMBER                  = '0';
+    const FORMAT_NUMBER_00               = '0.00';
+    const FORMAT_NUMBER_COMMA_SEPARATED1 = '#,##0.00';
+    const FORMAT_NUMBER_COMMA_SEPARATED2 = '#,##0.00_-';
+
+    const FORMAT_PERCENTAGE              = '0%';
+    const FORMAT_PERCENTAGE_00           = '0.00%';
+
+    const FORMAT_DATE_YYYYMMDD2          = 'yyyy-mm-dd';
+    const FORMAT_DATE_YYYYMMDD           = 'yy-mm-dd';
+    const FORMAT_DATE_DDMMYYYY           = 'dd/mm/yy';
+    const FORMAT_DATE_DMYSLASH           = 'd/m/y';
+    const FORMAT_DATE_DMYMINUS           = 'd-m-y';
+    const FORMAT_DATE_DMMINUS            = 'd-m';
+    const FORMAT_DATE_MYMINUS            = 'm-y';
+    const FORMAT_DATE_XLSX14             = 'mm-dd-yy';
+    const FORMAT_DATE_XLSX15             = 'd-mmm-yy';
+    const FORMAT_DATE_XLSX16             = 'd-mmm';
+    const FORMAT_DATE_XLSX17             = 'mmm-yy';
+    const FORMAT_DATE_XLSX22             = 'm/d/yy h:mm';
+    const FORMAT_DATE_DATETIME           = 'd/m/y h:mm';
+    const FORMAT_DATE_TIME1              = 'h:mm AM/PM';
+    const FORMAT_DATE_TIME2              = 'h:mm:ss AM/PM';
+    const FORMAT_DATE_TIME3              = 'h:mm';
+    const FORMAT_DATE_TIME4              = 'h:mm:ss';
+    const FORMAT_DATE_TIME5              = 'mm:ss';
+    const FORMAT_DATE_TIME6              = 'h:mm:ss';
+    const FORMAT_DATE_TIME7              = 'i:s.S';
+    const FORMAT_DATE_TIME8              = 'h:mm:ss;@';
+    const FORMAT_DATE_YYYYMMDDSLASH      = 'yy/mm/dd;@';
+
+    const FORMAT_CURRENCY_USD_SIMPLE     = '"$"#,##0.00_-';
+    const FORMAT_CURRENCY_USD            = '$#,##0_-';
+    const FORMAT_CURRENCY_EUR_SIMPLE     = '[$EUR ]#,##0.00_-';
+    }
+    4.sheet类
+    class PHPExcel_Worksheet implements PHPExcel_IComparable{}
+        
