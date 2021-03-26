@@ -1,0 +1,138 @@
+<?php
+
+
+namespace App\Lib;
+
+
+class ExcelGrid
+{
+
+    /**
+     * @var
+     * 格子的背景颜色
+     */
+    public $bgColor;
+
+
+    /**
+     * @var
+     * 格子的字体颜色
+     */
+    public $textColor;
+
+
+    /**
+     * @var
+     * 边框颜色
+     */
+    public $borderColor;
+
+
+    /**
+     * @var
+     * 格子的宽度
+     */
+    public $width = 0;
+
+    /**
+     * @var
+     * 格子高度
+     */
+    public $height = 50;
+
+
+    /**
+     * @var
+     * 边框
+     */
+    public $border = 1;
+
+    /**
+     * @var int
+     * 字体大小
+     */
+    public $size = 16;
+
+
+    /**
+     * @var int
+     * 占据行数
+     */
+    private $row = 1;
+
+
+    /**
+     * @var int
+     * 占据列数
+     */
+    private $column = 1;
+
+
+
+
+    /**
+     * @var
+     * 文本内容
+     */
+    public $title;
+
+    public $image;
+
+
+
+
+    public function __construct($single)
+    {
+
+        if($single['height']==0) return;
+        if(isset($single['row'])){
+            $this->width = $single['width']*$single['row'];
+        }else{
+            $this->width = $single['width'];
+        }
+        if(isset($single['column'])){
+            $this->height = $single['height']*$single['column'];
+        }else{
+            $this->height = $single['height'];
+        }
+
+        $this->size = $single['size']??$this->size;
+        $this->title = $single['title'];
+
+        $this->image = imagecreatetruecolor($this->width,$this->height);
+        $this->bgColor = imagecolorallocate($this->image,$single['bg_color'][0],$single['bg_color'][1],$single['bg_color'][2]);
+        $this->textColor = imagecolorallocate($this->image,$single['text_color'][0],$single['text_color'][1],$single['text_color'][2]);
+        $this->borderColor = imagecolorallocate($this->image,0,0,0);
+//        imagefilledrectangle($this->image, 0, 0,$width,$height,$this->bgColor);//填充图片背景色
+//        imageline($this->image,0,0,$width,0,$this->borderColor);
+//        imageline($this->image,0,0,0,$height,$this->borderColor);
+//        imageline($this->image,$width,0,0,$height,$this->borderColor);
+//        imageline($this->image,0,0,$width,$height,$this->borderColor);
+//        imageline($this->image,0,$height,$width,$height,$this->borderColor);
+//        imageline($this->image,$width,0,$width,$height,$this->borderColor);
+
+        imagerectangle($this->image,0,0,$this->width,$this->height,$this->borderColor);
+        imagefilledrectangle($this->image, $this->border, $this->border,$this->width,$this->height,$this->bgColor);//填充图片背景色
+
+        $font = $_SERVER["DOCUMENT_ROOT"].DIRECTORY_SEPARATOR."ttf".DIRECTORY_SEPARATOR."simhei.ttf";
+
+
+        // First we create our bounding box
+        $bbox = imageftbbox($this->size, 0, $font,  $this->title);
+
+        // This is our cordinates for X and Y
+        $x = $bbox[0] + (imagesx($this->image) / 2) - ($bbox[4] / 2) - 5;
+        $y = $bbox[1] + (imagesy($this->image) / 2) - ($bbox[5] / 2) - 2;
+
+        imagefttext($this->image, $this->size, 0, $x, $y, $this->textColor, $font, $this->title);
+
+
+        //imagettftext($this->image, $this->size,0,$x,$y,$this->textColor,$font,$this->title);
+
+
+        imagepng($this->image,storage_path('test'.DIRECTORY_SEPARATOR."3.png"));
+
+    }
+
+
+}
