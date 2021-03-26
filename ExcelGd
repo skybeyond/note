@@ -1,0 +1,134 @@
+<?php
+
+
+namespace App\Lib;
+
+
+class ExcelGd
+{
+    /**
+     * @var int
+     * 画布的宽
+     */
+    private $CanvasWidth = 1000;
+    /**
+     * @var int
+     * 画布的高
+     */
+    private $CanvasHeight = 500;
+
+
+    /**
+     * @var
+     * 背景色
+     */
+    private $imageBackGroundColor;
+
+    /**
+     * @var
+     * 字体颜色
+     */
+    private $imageTextColor;
+
+    /**
+     * @var
+     * 边框颜色
+     */
+    private $imageBorderColor;
+
+
+    /**
+     * @var
+     * 保存图片路径
+     */
+    private $saveImagePath;
+
+
+    /**
+     * @var array
+     * 图片的外层边框
+     */
+    private $imageBorder = [0,0];
+
+    /**
+     * @var
+     * 图像资源信息
+     */
+    private $image;
+
+
+    /**
+     * @var
+     * 画图合并x点
+     */
+    private $x = 0;
+
+    /**
+     * @var
+     * 画图合并y点
+     */
+    private $y = 0;
+
+
+
+
+
+
+
+
+
+
+    public function __construct($width,$height,$bgColor)
+    {
+        $this->CanvasWidth = $width;
+        $this->CanvasHeight = $height;
+        $this->image = imagecreatetruecolor($this->CanvasWidth,$this->CanvasHeight);
+        $this->imageBackGroundColor = imagecolorallocate($this->image,$bgColor[0],$bgColor[1],$bgColor[2]);
+        $this->imageTextColor = imagecolorallocate($this->image,0,0,0);
+        imagefill($this->image, 0, 0, $this->imageBackGroundColor);//填充图片背景色
+    }
+
+
+    public function setImageBorder($border){
+        $this->imageBorderColor = imagecolorallocate($this->image,0,0,0);
+        $this->imageBorder = $border;
+    }
+
+
+    public function drawCanvas($data,$grid_height){
+
+
+        foreach ($data as $k=>$v){
+            $this->y = $k*$grid_height;
+            $this->x = 0;
+
+            foreach ($v as $kk=>$vv){
+                if($vv['height']!=0){
+                    $grid = new ExcelGrid($vv);
+                    imagecopy( $this->image, $grid->image,$this->x,$this->y, 0, 0,$grid->width,$grid->height);
+                }
+
+                if(isset($vv['row'])){
+                    $this->x += $vv['row']*$vv['width'];
+                }else{
+                    $this->x += $vv['width'];
+                }
+
+            }
+        }
+
+    }
+
+    public function setSaveImagePath($imagePath){
+        $this->saveImagePath =$imagePath;
+    }
+
+
+    public function saveImage(){
+        $status = imagepng($this->image,$this->saveImagePath);
+        return $status;
+    }
+
+
+
+}
