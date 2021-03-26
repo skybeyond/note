@@ -1,0 +1,1514 @@
+/**
+
+
+        array(19) {
+        [0]=>
+        array(11) {
+        ["platform"]=>
+        string(12) "今日头条"
+        ["type"]=>
+        string(15) "客户自运营"
+        ["today_cost"]=>
+        float(1432376.16)
+        ["seq"]=>
+        string(6) "-4.28%"
+        ["yesterday_cost"]=>
+        float(1496473.49)
+        ["ceq"]=>
+        string(7) "-12.43%"
+        ["sevenday_cost"]=>
+        float(1635651.81)
+        ["yesterday_total_cost"]=>
+        float(13399313.4)
+        ["seven_avg_cost"]=>
+        float(13058999.37)
+        ["yesterday_seven_avg_seq"]=>
+        string(5) "2.61%"
+        ["yesterday_seven_diff_cost"]=>
+        float(340314.03)
+        }
+        [1]=>
+        array(11) {
+        ["platform"]=>
+        string(12) "今日头条"
+        ["type"]=>
+        string(12) "量子运营"
+        ["today_cost"]=>
+        float(762273.72)
+        ["seq"]=>
+        string(6) "13.77%"
+        ["yesterday_cost"]=>
+        float(670009.66)
+        ["ceq"]=>
+        string(6) "-0.77%"
+        ["sevenday_cost"]=>
+        float(768150.53)
+        ["yesterday_total_cost"]=>
+        float(13399313.4)
+        ["seven_avg_cost"]=>
+        float(13058999.37)
+        ["yesterday_seven_avg_seq"]=>
+        string(5) "2.61%"
+        ["yesterday_seven_diff_cost"]=>
+        float(340314.03)
+        }
+        [2]=>
+        array(11) {
+        ["platform"]=>
+        string(12) "今日头条"
+        ["type"]=>
+        string(15) "服务商运营"
+        ["today_cost"]=>
+        float(423492.1)
+        ["seq"]=>
+        string(6) "55.55%"
+        ["yesterday_cost"]=>
+        float(272252.7)
+        ["ceq"]=>
+        string(5) "3.28%"
+        ["sevenday_cost"]=>
+        float(410044.37)
+        ["yesterday_total_cost"]=>
+        float(13399313.4)
+        ["seven_avg_cost"]=>
+        float(13058999.37)
+        ["yesterday_seven_avg_seq"]=>
+        string(5) "2.61%"
+        ["yesterday_seven_diff_cost"]=>
+        float(340314.03)
+        }
+        [3]=>
+        array(11) {
+        ["platform"]=>
+        string(12) "今日头条"
+        ["type"]=>
+        string(12) "仅代运营"
+        ["today_cost"]=>
+        float(8804.89)
+        ["seq"]=>
+        string(4) "7.4%"
+        ["yesterday_cost"]=>
+        float(8198.27)
+        ["ceq"]=>
+        string(5) "3.68%"
+        ["sevenday_cost"]=>
+        float(8492.2)
+        ["yesterday_total_cost"]=>
+        float(13399313.4)
+        ["seven_avg_cost"]=>
+        float(13058999.37)
+        ["yesterday_seven_avg_seq"]=>
+        string(5) "2.61%"
+        ["yesterday_seven_diff_cost"]=>
+        float(340314.03)
+        }
+        [4]=>
+        array(11) {
+        ["platform"]=>
+        string(12) "今日头条"
+        ["type"]=>
+        string(6) "未知"
+        ["today_cost"]=>
+        float(1045964)
+        ["seq"]=>
+        string(6) "17.52%"
+        ["yesterday_cost"]=>
+        float(890052.84)
+        ["ceq"]=>
+        string(6) "26.28%"
+        ["sevenday_cost"]=>
+        float(828313.35)
+        ["yesterday_total_cost"]=>
+        float(13399313.4)
+        ["seven_avg_cost"]=>
+        float(13058999.37)
+        ["yesterday_seven_avg_seq"]=>
+        string(5) "2.61%"
+        ["yesterday_seven_diff_cost"]=>
+        float(340314.03)
+        }
+        [5]=>
+        array(11) {
+        ["platform"]=>
+        string(12) "今日头条"
+        ["type"]=>
+        string(9) "总消耗"
+        ["today_cost"]=>
+        float(3672910.87)
+        ["seq"]=>
+        string(6) "10.07%"
+        ["yesterday_cost"]=>
+        float(3336986.96)
+        ["ceq"]=>
+        string(5) "0.61%"
+        ["sevenday_cost"]=>
+        float(3650652.26)
+        ["yesterday_total_cost"]=>
+        float(13399313.4)
+        ["seven_avg_cost"]=>
+        float(13058999.37)
+        ["yesterday_seven_avg_seq"]=>
+        string(5) "2.61%"
+        ["yesterday_seven_diff_cost"]=>
+        float(340314.03)
+        }
+        [6]=>
+        array(11) {
+        ["platform"]=>
+        string(6) "快手"
+        ["type"]=>
+        string(15) "客户自运营"
+        ["today_cost"]=>
+        float(159803.36)
+        ["seq"]=>
+        string(7) "-29.79%"
+        ["yesterday_cost"]=>
+        float(227600.83)
+        ["ceq"]=>
+        string(7) "-20.19%"
+        ["sevenday_cost"]=>
+        float(200224.28)
+        ["yesterday_total_cost"]=>
+        float(2452242.43)
+        ["seven_avg_cost"]=>
+        float(2200115.16)
+        ["yesterday_seven_avg_seq"]=>
+        string(6) "11.46%"
+        ["yesterday_seven_diff_cost"]=>
+        float(252127.27)
+        }
+        [7]=>
+        array(11) {
+        ["platform"]=>
+        string(6) "快手"
+        ["type"]=>
+        string(12) "量子运营"
+        ["today_cost"]=>
+        float(73906.94)
+        ["seq"]=>
+        string(7) "-27.13%"
+        ["yesterday_cost"]=>
+        float(101427.5)
+        ["ceq"]=>
+        string(7) "-42.47%"
+        ["sevenday_cost"]=>
+        float(128458.78)
+        ["yesterday_total_cost"]=>
+        float(2452242.43)
+        ["seven_avg_cost"]=>
+        float(2200115.16)
+        ["yesterday_seven_avg_seq"]=>
+        string(6) "11.46%"
+        ["yesterday_seven_diff_cost"]=>
+        float(252127.27)
+        }
+        [8]=>
+        array(11) {
+        ["platform"]=>
+        string(6) "快手"
+        ["type"]=>
+        string(15) "服务商运营"
+        ["today_cost"]=>
+        float(26554.21)
+        ["seq"]=>
+        string(7) "-18.04%"
+        ["yesterday_cost"]=>
+        float(32397.9)
+        ["ceq"]=>
+        string(6) "65.37%"
+        ["sevenday_cost"]=>
+        float(16057.4)
+        ["yesterday_total_cost"]=>
+        float(2452242.43)
+        ["seven_avg_cost"]=>
+        float(2200115.16)
+        ["yesterday_seven_avg_seq"]=>
+        string(6) "11.46%"
+        ["yesterday_seven_diff_cost"]=>
+        float(252127.27)
+        }
+        [9]=>
+        array(11) {
+        ["platform"]=>
+        string(6) "快手"
+        ["type"]=>
+        string(12) "仅代运营"
+        ["today_cost"]=>
+        float(0)
+        ["seq"]=>
+        int(0)
+        ["yesterday_cost"]=>
+        float(0)
+        ["ceq"]=>
+        int(0)
+        ["sevenday_cost"]=>
+        float(0)
+        ["yesterday_total_cost"]=>
+        float(2452242.43)
+        ["seven_avg_cost"]=>
+        float(2200115.16)
+        ["yesterday_seven_avg_seq"]=>
+        string(6) "11.46%"
+        ["yesterday_seven_diff_cost"]=>
+        float(252127.27)
+        }
+        [10]=>
+        array(11) {
+        ["platform"]=>
+        string(6) "快手"
+        ["type"]=>
+        string(6) "未知"
+        ["today_cost"]=>
+        float(473840.19)
+        ["seq"]=>
+        string(5) "6.83%"
+        ["yesterday_cost"]=>
+        float(443534.8)
+        ["ceq"]=>
+        string(7) "222.69%"
+        ["sevenday_cost"]=>
+        float(146838.69)
+        ["yesterday_total_cost"]=>
+        float(2452242.43)
+        ["seven_avg_cost"]=>
+        float(2200115.16)
+        ["yesterday_seven_avg_seq"]=>
+        string(6) "11.46%"
+        ["yesterday_seven_diff_cost"]=>
+        float(252127.27)
+        }
+        [11]=>
+        array(11) {
+        ["platform"]=>
+        string(6) "快手"
+        ["type"]=>
+        string(9) "总消耗"
+        ["today_cost"]=>
+        float(734104.7)
+        ["seq"]=>
+        string(5) "-8.8%"
+        ["yesterday_cost"]=>
+        float(804961.02)
+        ["ceq"]=>
+        string(6) "49.34%"
+        ["sevenday_cost"]=>
+        float(491579.16)
+        ["yesterday_total_cost"]=>
+        float(2452242.43)
+        ["seven_avg_cost"]=>
+        float(2200115.16)
+        ["yesterday_seven_avg_seq"]=>
+        string(6) "11.46%"
+        ["yesterday_seven_diff_cost"]=>
+        float(252127.27)
+        }
+        [12]=>
+        array(11) {
+        ["platform"]=>
+        string(9) "广点通"
+        ["type"]=>
+        string(15) "客户自运营"
+        ["today_cost"]=>
+        float(244887.21)
+        ["seq"]=>
+        string(3) "-8%"
+        ["yesterday_cost"]=>
+        float(266173.03)
+        ["ceq"]=>
+        string(7) "-37.87%"
+        ["sevenday_cost"]=>
+        float(394123.51)
+        ["yesterday_total_cost"]=>
+        float(1536656.18)
+        ["seven_avg_cost"]=>
+        float(1715832.64)
+        ["yesterday_seven_avg_seq"]=>
+        string(7) "-10.44%"
+        ["yesterday_seven_diff_cost"]=>
+        float(-179176.46)
+        }
+        [13]=>
+        array(11) {
+        ["platform"]=>
+        string(9) "广点通"
+        ["type"]=>
+        string(12) "量子运营"
+        ["today_cost"]=>
+        float(10405.88)
+        ["seq"]=>
+        string(6) "-7.92%"
+        ["yesterday_cost"]=>
+        float(11300.79)
+        ["ceq"]=>
+        string(6) "-0.16%"
+        ["sevenday_cost"]=>
+        float(10422.77)
+        ["yesterday_total_cost"]=>
+        float(1536656.18)
+        ["seven_avg_cost"]=>
+        float(1715832.64)
+        ["yesterday_seven_avg_seq"]=>
+        string(7) "-10.44%"
+        ["yesterday_seven_diff_cost"]=>
+        float(-179176.46)
+        }
+        [14]=>
+        array(11) {
+        ["platform"]=>
+        string(9) "广点通"
+        ["type"]=>
+        string(15) "服务商运营"
+        ["today_cost"]=>
+        float(15196.59)
+        ["seq"]=>
+        string(6) "21.26%"
+        ["yesterday_cost"]=>
+        float(12532.51)
+        ["ceq"]=>
+        string(6) "30.82%"
+        ["sevenday_cost"]=>
+        float(11616.09)
+        ["yesterday_total_cost"]=>
+        float(1536656.18)
+        ["seven_avg_cost"]=>
+        float(1715832.64)
+        ["yesterday_seven_avg_seq"]=>
+        string(7) "-10.44%"
+        ["yesterday_seven_diff_cost"]=>
+        float(-179176.46)
+        }
+        [15]=>
+        array(11) {
+        ["platform"]=>
+        string(9) "广点通"
+        ["type"]=>
+        string(12) "仅代运营"
+        ["today_cost"]=>
+        float(0)
+        ["seq"]=>
+        int(0)
+        ["yesterday_cost"]=>
+        float(0)
+        ["ceq"]=>
+        int(0)
+        ["sevenday_cost"]=>
+        float(0)
+        ["yesterday_total_cost"]=>
+        float(1536656.18)
+        ["seven_avg_cost"]=>
+        float(1715832.64)
+        ["yesterday_seven_avg_seq"]=>
+        string(7) "-10.44%"
+        ["yesterday_seven_diff_cost"]=>
+        float(-179176.46)
+        }
+        [16]=>
+        array(11) {
+        ["platform"]=>
+        string(9) "广点通"
+        ["type"]=>
+        string(6) "未知"
+        ["today_cost"]=>
+        float(285108.62)
+        ["seq"]=>
+        string(6) "-7.23%"
+        ["yesterday_cost"]=>
+        float(307322.81)
+        ["ceq"]=>
+        string(6) "26.62%"
+        ["sevenday_cost"]=>
+        float(225162.89)
+        ["yesterday_total_cost"]=>
+        float(1536656.18)
+        ["seven_avg_cost"]=>
+        float(1715832.64)
+        ["yesterday_seven_avg_seq"]=>
+        string(7) "-10.44%"
+        ["yesterday_seven_diff_cost"]=>
+        float(-179176.46)
+        }
+        [17]=>
+        array(11) {
+        ["platform"]=>
+        string(9) "广点通"
+        ["type"]=>
+        string(9) "总消耗"
+        ["today_cost"]=>
+        float(555598.3)
+        ["seq"]=>
+        string(6) "-6.99%"
+        ["yesterday_cost"]=>
+        float(597329.14)
+        ["ceq"]=>
+        string(7) "-13.37%"
+        ["sevenday_cost"]=>
+        float(641325.26)
+        ["yesterday_total_cost"]=>
+        float(1536656.18)
+        ["seven_avg_cost"]=>
+        float(1715832.64)
+        ["yesterday_seven_avg_seq"]=>
+        string(7) "-10.44%"
+        ["yesterday_seven_diff_cost"]=>
+        float(-179176.46)
+        }
+        [18]=>
+        array(11) {
+        ["platform"]=>
+        string(8) "微信MP"
+        ["type"]=>
+        string(9) "总消耗"
+        ["today_cost"]=>
+        float(149544)
+        ["seq"]=>
+        string(7) "-25.72%"
+        ["yesterday_cost"]=>
+        float(201326.24)
+        ["ceq"]=>
+        string(5) "-1.5%"
+        ["sevenday_cost"]=>
+        float(151828.43)
+        ["yesterday_total_cost"]=>
+        float(437611.82)
+        ["seven_avg_cost"]=>
+        float(430595.17)
+        ["yesterday_seven_avg_seq"]=>
+        string(5) "1.63%"
+        ["yesterday_seven_diff_cost"]=>
+        float(7016.65)
+        }
+        }
+
+
+         **/
+
+        //定义一个格子高度
+        $grid_height = 50;
+
+
+        $total_height = (count($data1)+count($data2)+4)*$grid_height;
+
+
+
+
+
+        //定义每一列的格子的宽度
+        $column_table_width_list = [200,200,200,200,300,200,300,300,300,300,300];
+        $column_table_height_list = [$grid_height,$grid_height,$grid_height,$grid_height,$grid_height,$grid_height,$grid_height,$grid_height,$grid_height,$grid_height,$grid_height];
+
+        $table_title = ["媒体","运营方式","今日实时消耗","环比","昨日同时段消耗","同比","上周同时段消耗","昨日总消耗","前7天数据平均值","昨日 VS 7日平均增量比","昨日 VS 7日平均增量"];
+        $table_title2 = ["媒体","业务团队","今日实时消耗","环比","昨日同时段消耗","同比","上周同时段消耗","昨日总消耗","前7天数据平均值","昨日 VS 7日平均增量比","昨日 VS 7日平均增量"];
+
+        //标题颜色分层
+        $table_title_bg_color = [
+            "0#6"=>['bg_color'=>[47,117,181],'text_color'=>[255,255,255]],
+            "7#10"=>['bg_color'=>[255,230,153],'text_color'=>[48,116,151]],
+        ];
+
+        //需要合并的列
+        $need_merge_row_arr = [
+            'platform'=>1,
+            'type'=>0,
+            'today_cost'=>0,
+            'seq'=>0,
+            'yesterday_cost'=>0,
+            'ceq'=>0,
+            'sevenday_cost'=>0,
+            'yesterday_total_cost'=>1,
+            'seven_avg_cost'=>1,
+            'yesterday_seven_avg_seq'=>1,
+            'yesterday_seven_diff_cost'=>1
+        ];
+
+        //记录需要进行文字颜色调整的字段
+        $text_color_arr = ["seq","ceq","yesterday_seven_avg_seq","yesterday_seven_diff_cost"];
+
+        //记录正数颜色和负数颜色
+        $text_color_type = [
+            1=>[112,173,71],
+            2=>[255,0,0],
+        ];
+
+        //记录颜色
+        $table_data_bg_color = [
+            "今日头条|0#6"=>['bg_color'=>[198,224,180],'text_color'=>[0,0,0]],
+            "今日头条|7#10"=>['bg_color'=>[221,235,247],'text_color'=>[48,116,151]],
+            "快手|0#6"=>['bg_color'=>[255,217,102],'text_color'=>[0,0,0]],
+            "快手|7#10"=>['bg_color'=>[221,235,247],'text_color'=>[48,116,151]],
+            "广点通|0#6"=>['bg_color'=>[226,239,218],'text_color'=>[0,0,0]],
+            "广点通|7#10"=>['bg_color'=>[221,235,247],'text_color'=>[48,116,151]],
+            "微信MP|0#6"=>['bg_color'=>[255,230,153],'text_color'=>[0,0,0]],
+            "微信MP|7#10"=>['bg_color'=>[221,235,247],'text_color'=>[48,116,151]],
+            //"1#1-6#1"=>['bg_color'=>[198,224,180],'text_color'=>[0,0,0]],
+        ];
+
+
+
+        //data1数据格式
+
+
+
+        $data_list1 = self::deal_table_data($data1,$table_title,$column_table_width_list,$column_table_height_list,$table_title_bg_color,$grid_height,$need_merge_row_arr,$text_color_arr,$text_color_type,$table_data_bg_color);
+        $data_list2 = self::deal_table_data($data2,$table_title2,$column_table_width_list,$column_table_height_list,$table_title_bg_color,$grid_height,$need_merge_row_arr,$text_color_arr,$text_color_type,$table_data_bg_color);
+        
+//        $data = [
+//            [
+//                [
+//                    'title'=>'媒体',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[47,117,181],
+//                    'text_color'=>[255,255,255]
+//                ],
+//                [
+//                    'title'=>'运营方式',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>2,
+//                    'column'=>1,
+//                    'bg_color'=>[47,117,181],
+//                    'text_color'=>[255,255,255]
+//                ],
+//                [
+//                    'title'=>'今日实时消耗',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[47,117,181],
+//                    'text_color'=>[255,255,255]
+//                ],
+//                [
+//                    'title'=>'环比',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[47,117,181],
+//                    'text_color'=>[255,255,255]
+//                ],
+//                [
+//                    'title'=>'昨日同时段消耗',
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[47,117,181],
+//                    'text_color'=>[255,255,255]
+//                ],
+//                [
+//                    'title'=>'同比',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[47,117,181],
+//                    'text_color'=>[255,255,255]
+//                ],
+//                [
+//                    'title'=>'上周同时段消耗',
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[47,117,181],
+//                    'text_color'=>[255,255,255]
+//                ],
+//                [
+//                    'title'=>'昨日总消耗',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[255,230,153],
+//                    'text_color'=>[48,116,151]
+//                ],
+//                [
+//                    'title'=>'前7天数据平均值',
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[255,230,153],
+//                    'text_color'=>[48,116,151]
+//                ],
+//                [
+//                    'title'=>'昨日 VS 7日平均增量比',
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[255,230,153],
+//                    'text_color'=>[48,116,151]
+//                ],
+//                [
+//                    'title'=>'昨日 VS 7日平均增量',
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[255,230,153],
+//                    'text_color'=>[48,116,151]
+//                ],
+//            ],
+//            [
+//                [
+//                    'title'=>'今日头条',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>'自运营',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>'合拍运营',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1234587.55,
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"5.54%",
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[255,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"-15.56%",
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[112,173,71]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"-1.23%",
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[112,173,71]
+//                ],
+//                [
+//                    'title'=>"-1.22%",
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[112,173,71]
+//                ],
+//
+//            ],
+//
+//            [
+//                [
+//                    'title'=>'今日头条',
+//                    'width'=>200,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>'自运营',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>'合拍运营',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1234587.55,
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"5.54%",
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[255,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"-15.56%",
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[112,173,71]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>200,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"-1.23%",
+//                    'width'=>300,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[112,173,71]
+//                ],
+//                [
+//                    'title'=>"-1.22%",
+//                    'width'=>300,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[112,173,71]
+//                ],
+//
+//            ],
+//
+//            [
+//                [
+//                    'title'=>'今日头条',
+//                    'width'=>200,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>'自运营',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>'合拍运营',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1234587.55,
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"5.54%",
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[255,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"-15.56%",
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[112,173,71]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>200,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"-1.23%",
+//                    'width'=>300,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[112,173,71]
+//                ],
+//                [
+//                    'title'=>"-1.22%",
+//                    'width'=>300,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[112,173,71]
+//                ],
+//
+//            ],
+//
+//            [
+//                [
+//                    'title'=>'今日头条',
+//                    'width'=>200,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>'自运营',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>'合拍运营',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1234587.55,
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"5.54%",
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[255,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"-15.56%",
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[112,173,71]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>200,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"-1.23%",
+//                    'width'=>300,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[112,173,71]
+//                ],
+//                [
+//                    'title'=>"-1.22%",
+//                    'width'=>300,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[112,173,71]
+//                ],
+//
+//            ],
+//
+//            [
+//                [
+//                    'title'=>'今日头条',
+//                    'width'=>200,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>'自运营',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>'合拍运营',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1234587.55,
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"5.54%",
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[255,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"-15.56%",
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[112,173,71]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>200,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"-1.23%",
+//                    'width'=>300,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[112,173,71]
+//                ],
+//                [
+//                    'title'=>"-1.22%",
+//                    'width'=>300,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[112,173,71]
+//                ],
+//
+//            ],
+//
+//            [
+//                [
+//                    'title'=>'今日头条',
+//                    'width'=>200,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>'自运营',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>'合拍运营',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1234587.55,
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"5.54%",
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[255,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"-15.56%",
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[112,173,71]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[198,224,180],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>200,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"-1.23%",
+//                    'width'=>300,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[112,173,71]
+//                ],
+//                [
+//                    'title'=>"-1.22%",
+//                    'width'=>300,
+//                    'height'=>0,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[112,173,71]
+//                ],
+//
+//            ],
+//
+//            [
+//                [
+//                    'title'=>'快手',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[255,217,102],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>'自运营',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[255,217,102],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>'合拍运营',
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[255,217,102],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1234587.55,
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[255,217,102],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"5.54%",
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[255,217,102],
+//                    'text_color'=>[255,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[255,217,102],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"-15.56%",
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[255,217,102],
+//                    'text_color'=>[112,173,71]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>1,
+//                    'bg_color'=>[255,217,102],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>200,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>1855285.36,
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[0,0,0]
+//                ],
+//                [
+//                    'title'=>"-1.23%",
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[112,173,71]
+//                ],
+//                [
+//                    'title'=>"-1.22%",
+//                    'width'=>300,
+//                    'height'=>50,
+//                    'row'=>1,
+//                    'column'=>6,
+//                    'bg_color'=>[221,235,247],
+//                    'text_color'=>[112,173,71]
+//                ],
+//
+//            ],
+//
+//        ];
+
+
+        //记录总宽度和总高度
+        $total_width = 0;
+
+        foreach (current($data_list1) as $kk=>$vv){
+            if(isset($vv['row'])){
+                $total_width += $vv['width']*$vv['row'];
+            }else{
+                $total_width += $vv['width'];
+            }
+
+        }
+
+        //定义一个白框
+        $data_blank = [
+            [
+                [
+                    'title'=>"",
+                    'width'=>$total_width,
+                    'height'=>$grid_height,
+                    'row'=>1,
+                    'column'=>1,
+                    'is_merge'=>0,
+                    'bg_color'=>[255,255,255],
+                    'text_color'=>[255,255,255]
+                ],
+            ]
+
+        ];
+
+        //时间框
+        $data_time = [
+            [
+                [
+                    'title'=>"数据时间：截至".date("Y年m月d日H时",strtotime($time)),
+                    'width'=>$total_width,
+                    'height'=>$grid_height,
+                    'row'=>1,
+                    'column'=>1,
+                    'is_merge'=>0,
+                    'bg_color'=>[255,255,255],
+                    'text_color'=>[0,0,0]
+                ],
+            ]
+
+        ];
+
+
+        $data = array_merge($data_list1,$data_blank,$data_list2,$data_time);
+
+
+
+        //添加一个空白格子
+
+
+
+
+
+
+        $gd = new ExcelGd($total_width,$total_height,[255,255,255]);
+        $gd->setSaveImagePath(storage_path('test'.DIRECTORY_SEPARATOR."1.png"));
+        $gd->setImageBorder([1,1]);
+
+
+
+
+
+
+        $gd->drawCanvas($data,$grid_height);
+
+
+        //保存地址
+        $status = $gd->saveImage();
