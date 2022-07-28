@@ -1,0 +1,63 @@
+>php使用ECB模式加密
+
+```php
+public function encrypt($data)
+    {
+    	//key必须是16位
+
+        $data = openssl_encrypt($data, "AES-128-ECB", "1234567887654321", OPENSSL_RAW_DATA);
+        return base64_encode($data);
+    }
+
+    public function decrypt($data)
+    {
+        return openssl_decrypt(base64_decode($data), "AES-128-ECB", "1234567887654321",  OPENSSL_RAW_DATA);
+    }
+```
+
+>js使用cryptojs解密
+
+```js
+
+    //ECB模式(key必须是16位)
+    AesKey = '1234567887654321';//加密时用的key,跟php一样
+    message='bzdW6slzWa0zrm25cz9/6YMPKVMonH6Tc0RgZs0RmjQZa54zpNNvdPk0yOtdfgDCTa8I5d3trz8cmGkfyNlpcTsIH4zQsow3Cc+H0UXzW1nVD1LXVU84iiGB0YgXYPGPS4gSthMtbQtU4YG38MwZqiEn6+cEViAjAB/QWLuF669Dtjz5Lsll+85q8RmXvrBkE3I4grgl4m70cqv90iE/KHQcKsmH0BgUy4EWY1ue9qc=';//加密后的字符窜
+    var ECBOptions = {
+        mode: CryptoJS.mode.ECB,
+        padding: CryptoJS.pad.Pkcs7
+    };
+    var key = CryptoJS.enc.Utf8.parse(AesKey);
+    var bytes = CryptoJS.AES.decrypt(message, key,ECBOptions);
+    var originalText = bytes.toString(CryptoJS.enc.Utf8);
+    console.log(originalText)
+```
+
+>php使用CBC加密
+
+```php
+public function cbc_encrypt($data)
+    {
+    	//key必须是16位
+        return openssl_encrypt($data, "AES-128-CBC", "1234567887654321", 0,"1234567887654321");
+    }
+
+    public function cbc_decrypt($data)
+    {
+        return openssl_decrypt($data, "AES-128-CBC", "1234567887654321", 0,"1234567887654321");
+    }
+```
+
+> js使用CBC解密
+
+```js
+encoded = 'n901\/9sHrIGeDRyNjy+xTG+e25J+GlDnixcKlrh7bGGmOpApbpgAdhnvWsIMzsUzU\/QFuKxPcU2eMUAWWn1FNKAfM7o9V7ELYJDIXpKRmRuWfVjddw\/sFesUKaqOrhZFTZLwe4HAdnOlLg4ThVM0O6IQGdwAg+FXuAYKOGZx375JU67mk9f63Ldx3d9f+GYIu7gcoDjiYEA0+9g4Y5ofp6zsjaPhuAxKsnrNtUACWVw='
+    const key2 = CryptoJS.enc.Latin1.parse('1234567887654321');
+    const iv2 = CryptoJS.enc.Latin1.parse('1234567887654321');
+    const decoded = CryptoJS.AES.decrypt(encoded, key2, {
+        iv: iv2,
+        mode: CryptoJS.mode.CBC,
+        adding: CryptoJS.pad.ZeroPadding
+    }).toString(CryptoJS.enc.Utf8)
+    console.log('decoded', decoded);
+```
+
