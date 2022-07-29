@@ -63,4 +63,14 @@ encoded = 'n901\/9sHrIGeDRyNjy+xTG+e25J+GlDnixcKlrh7bGGmOpApbpgAdhnvWsIMzsUzU\/Q
     }).toString(CryptoJS.enc.Utf8)
     console.log('decoded', decoded);
 ```
+>NoPadding：不进行补位操作，保持源数据。
 
+>zeroPadding：末尾补0操作。对于源数据长度不是16的整数倍时，在末尾补0至长度为16的整数倍；
+
+>另外一种情况是源数据长度正好是16的整数倍时，需要在数据末尾补16个0.（需注意！！！！！）
+
+>PKCS5Padding ：对于源数据长度不是16的整数倍时，在末尾补(16-src_len%16)至长度为16的整数倍；
+
+>另外一种情况是源数据长度正好是16的整数倍时，需要在数据末尾补16个16.（需注意！！！！！）
+
+>PKCS7Padding:  与PKCS5Padding使用相同。
