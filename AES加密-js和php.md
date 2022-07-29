@@ -34,6 +34,10 @@ public function encrypt($data)
 
 >php使用CBC加密
 
+>0 : 默认值，PKCS#7进行填充, 返回的数据经过 base64 编码;
+>1 : OPENSSL_RAW_DATA, PKCS#7进行填充, 但返回的结果未经过 base64 编码;
+>2 : OPENSSL_ZERO_PADDING, openssl不推荐chr(0)填充的方式, 需要开发者自行填充, 返回的结果经过 base64 编码;
+>3 : OPENSSL_NO_PADDING, 需要开发者自行填充, 返回的结果不经过base64编码;
 ```php
 public function cbc_encrypt($data)
     {
@@ -74,3 +78,4 @@ encoded = 'n901\/9sHrIGeDRyNjy+xTG+e25J+GlDnixcKlrh7bGGmOpApbpgAdhnvWsIMzsUzU\/Q
 >另外一种情况是源数据长度正好是16的整数倍时，需要在数据末尾补16个16.（需注意！！！！！）
 
 >PKCS7Padding:  与PKCS5Padding使用相同。
+
