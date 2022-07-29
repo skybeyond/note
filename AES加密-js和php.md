@@ -57,6 +57,7 @@ encoded = 'n901\/9sHrIGeDRyNjy+xTG+e25J+GlDnixcKlrh7bGGmOpApbpgAdhnvWsIMzsUzU\/Q
         iv: iv2,
         mode: CryptoJS.mode.CBC,
         //Zero模式解析后会出现补位\f的情况JSON解析会出错
+        //{\"invite_time\":1660372882,\"team_id\":\"16583441365599\",\"type\":\"2\",\"user_id\":1,\"name\":\"123\",\"user_name\":\"\\u6c6a\\u4f1f\"}\f\f\f\f\f\f\f\f\f\f\f\f
         //padding: CryptoJS.pad.ZeroPadding
         padding: CryptoJS.pad.Pkcs7
     }).toString(CryptoJS.enc.Utf8)
