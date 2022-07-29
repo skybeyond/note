@@ -56,7 +56,9 @@ encoded = 'n901\/9sHrIGeDRyNjy+xTG+e25J+GlDnixcKlrh7bGGmOpApbpgAdhnvWsIMzsUzU\/Q
     const decoded = CryptoJS.AES.decrypt(encoded, key2, {
         iv: iv2,
         mode: CryptoJS.mode.CBC,
-        adding: CryptoJS.pad.ZeroPadding
+        //Zero模式解析后会出现补位\f的情况JSON解析会出错
+        //padding: CryptoJS.pad.ZeroPadding
+        padding: CryptoJS.pad.Pkcs7
     }).toString(CryptoJS.enc.Utf8)
     console.log('decoded', decoded);
 ```
